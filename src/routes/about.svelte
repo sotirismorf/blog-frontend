@@ -2,6 +2,10 @@
 	import Article from "$lib/Article.svelte";
 import Card from "$lib/Card.svelte";
 </script>
+	
+<svelte:head>
+	<title>Λίγα λόγια για εμάς</title>
+</svelte:head>
 
 <Article>
 	<Card>
