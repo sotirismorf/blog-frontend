@@ -13,6 +13,7 @@
 	<Card>
 		<div class="bg-light-darker">
 			<h1 class="text-4xl font-bold mb-3">{post.title}</h1>
+			<img class="rounded-t-lg"  src="/img/{post.fmedia}" />
 			<p class="text-lg">{post.body}</p>
 		</div>
 	</Card>
