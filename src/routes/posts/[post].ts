@@ -9,7 +9,7 @@ export async function get({ params }) {
 
   for (let i in posts) {
     
-    var rel_link=posts[i].date+'-'+posts[i].title
+    var rel_link=posts[i].date+'-'+posts[i].slug
     console.log('trueid: '+rel_link)
     if (rel_link === params.post) {
       
