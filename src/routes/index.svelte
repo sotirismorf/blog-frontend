@@ -3,6 +3,9 @@
 	import Card from "$lib/Card.svelte";
 	import categories from "$lib/categories";
 
+	import SvelteMarkdown from "svelte-markdown";
+	import markdownOptions from "$lib/markdown/markdownOptions";
+
 	export let posts: App.Post[];
 </script>
 
@@ -36,11 +39,12 @@
 						href="/posts/{item.date}-{item.slug}"
 					>
 						<h1 class="text-2xl font-bold">{item.title}</h1>
-						<p
-							class="overflow-hidden h-[4.5rem]"
-						>
-							{item.body}
-						</p>
+						<div class="h-16 overflow-hidden">
+							<SvelteMarkdown
+								source={item.body}
+								renderers={markdownOptions}
+							/>
+						</div>
 					</a>
 				</div>
 			</div>

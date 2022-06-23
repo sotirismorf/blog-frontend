@@ -1,5 +1,14 @@
 [
   {
+    "title": "Δοκιμή για Markdown σε άρθρα",
+    "categories": ["blog"],
+    "id":"1",
+    "date": "2022-6-21",
+    "fmedia":"1",
+    "body": "Χρησιμοποιώντας Markdown, μπορούμε να γράφουμε σε **bold** και σε *italics*. \n\n Επίσης, μπορούμε να αλλάζουμε παραγράφους",
+    "slug":"ar8ro-noymero-ena-to-opoio-exei-poly-megalo-titlo"
+  },
+  {
     "title": "Άρθρο νούμερο ένα το οποίο έχει πολύ μεγάλο τίτλο",
     "categories": ["blog"],
     "id":"1",

@@ -1,7 +1,9 @@
 <script lang="ts">
 	import Card from "$lib/Card.svelte";
-	import categories from '$lib/categories'
-	export let post: App.Post
+	import SvelteMarkdown from "svelte-markdown";
+	import categories from "$lib/categories";
+	import markdownOptions from "$lib/markdown/markdownOptions";
+	export let post: App.Post;
 
 	import Article from "$lib/Article.svelte";
 </script>
@@ -14,13 +16,19 @@
 	<Card>
 		<div class="bg-light-darker">
 			<h1 class="text-4xl font-bold mb-3">{post.title}</h1>
-			<p class="text-xl mb-3 italic text-green">{categories[post.categories]}</p>
+			<p class="text-xl mb-3 italic text-green">
+				{categories[post.categories]}
+			</p>
 			<img
 				alt={post.fmedia[0]}
 				class="rounded-lg m-auto my-6"
-				src="https://picsum.photos/id/{post.fmedia}/200/250" 
+				src="https://picsum.photos/id/{post.fmedia}/200/250"
 			/>
-			<p class="text-lg">{post.body}</p>
+			<SvelteMarkdown
+				source={post.body}
+				renderers={markdownOptions}
+			/>
 		</div>
 	</Card>
 </Article>
+
