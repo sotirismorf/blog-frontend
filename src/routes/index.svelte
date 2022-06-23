@@ -18,7 +18,7 @@
 			<div class="inline-flex items-stretch content-start">
 				<a
 					class="flex-shrink-0 w-32"
-					href="/posts/{item.date}-{item.title}"
+					href="/posts/{item.date}-{item.slug}"
 				>
 					<img
 						alt={item.title}
@@ -27,10 +27,13 @@
 					/>
 				</a>
 				<div class="ml-4 flex-shrink">
-					<p class="text-green">{categories[item.categories[0]]}</p>
+										<a
+						class="hover:text-orange transition-all"
+						href="/category/{item.categories}"
+					><p class="text-green">{categories[item.categories[0]]}</p></a>
 					<a
 						class="hover:text-orange transition-all"
-						href="/posts/{item.date}-{item.title}"
+						href="/posts/{item.date}-{item.slug}"
 					>
 						<h1 class="text-2xl font-bold">{item.title}</h1>
 						<p
