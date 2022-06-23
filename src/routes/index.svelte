@@ -3,15 +3,7 @@
 	import Card from "$lib/Card.svelte";
 	import categories from "$lib/categories";
 
-	interface Post {
-		title: string,
-		body: string,
-		categories: string[],
-		fmedia: string[],
-		date: string
-	}
-
-	export let posts: Post[];
+	export let posts: App.Post[];
 </script>
 
 <svelte:head>
