@@ -6,6 +6,7 @@ declare namespace App {
 	interface Post {
 		title: string,
 		body: string,
+		slug: string,
 		categories: string[],
 		fmedia: string,
 		date: string
