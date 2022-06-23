@@ -16,9 +16,11 @@
 	<Card>
 		<div class="bg-light-darker">
 			<h1 class="text-4xl font-bold mb-3">{post.title}</h1>
-			<p class="text-xl mb-3 italic text-green">
-				{categories[post.categories]}
-			</p>
+				<a class="hover:text-orange transition-all" href="/category/{post.categories}">
+					<p class="text-xl mb-3 italic text-green">
+						{categories[post.categories]}
+					</p>
+				</a>	
 			<img
 				alt={post.fmedia[0]}
 				class="rounded-lg m-auto my-6"
