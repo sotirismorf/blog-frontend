@@ -30,10 +30,11 @@
 					/>
 				</a>
 				<div class="ml-4 flex-shrink">
-										<a
+					<a
 						class="hover:text-orange transition-all"
-						href="/category/{item.categories}"
-					><p class="text-green">{categories[item.categories[0]]}</p></a>
+						href="/category/{item.categories}">
+						<p class="text-green">{categories[item.categories[0]]}</p>
+					</a>
 					<a
 						class="hover:text-orange transition-all"
 						href="/posts/{item.date}-{item.slug}"
